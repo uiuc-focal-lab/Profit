@@ -1,0 +1,53 @@
+mnist_cnn_2layer_width_1_best.pth 0.1 5 FeaturePriority.Gradient 68.08510638297872 14.893617021276595
+mnist_cnn_2layer_width_1_best.pth 0.1 5 FeaturePriority.Random 68.08510638297872 28.191489361702125
+mnist_cnn_2layer_width_1_best.pth 0.1 10 FeaturePriority.Random 87.2340425531915 49.46808510638298
+mnist_cnn_2layer_width_1_best.pth 0.1 10 FeaturePriority.Gradient 87.2340425531915 34.04255319148936
+mnist_cnn_2layer_width_1_best.pth 0.1 15 FeaturePriority.Gradient 92.02127659574468 46.27659574468085
+mnist_cnn_2layer_width_1_best.pth 0.1 15 FeaturePriority.Random 92.02127659574468 62.76595744680851
+mnist_cnn_2layer_width_1_best.pth 0.1 15 FeaturePriority.Random 92.02127659574468 63.829787234042556
+mnist_cnn_2layer_width_1_best.pth 0.1 15 FeaturePriority.Random 92.02127659574468 58.51063829787234
+mnist_cnn_2layer_width_1_best.pth 0.1 15 FeaturePriority.Gradient 92.02127659574468 46.27659574468085
+mnist_cnn_2layer_width_1_best.pth 0.1 15 FeaturePriority.Gradient 92.02127659574468 48.93617021276596
+mnist_0.1.onnx 0.1 15 FeaturePriority.Gradient 100.0 67.52136752136752
+mnist_0.1.onnx 0.1 10 FeaturePriority.Gradient 98.29059829059828 52.13675213675214
+mnist_0.1.onnx 0.1 5 FeaturePriority.Gradient 89.74358974358975 31.62393162393162
+mnist_0.1.onnx 0.1 5 FeaturePriority.Random 89.74358974358975 10.256410256410255
+mnist_0.1.onnx 0.1 10 FeaturePriority.Random 98.29059829059828 11.965811965811966
+mnist_0.1.onnx 0.1 15 FeaturePriority.Random 100.0 21.367521367521366
+mnistconvSmallRELU__PGDK.onnx 0.02 15 FeaturePriority.Random 100.0 51.515151515151516
+mnistconvSmallRELU__PGDK.onnx 0.02 10 FeaturePriority.Random 98.98989898989899 43.93939393939394
+mnistconvSmallRELU__PGDK.onnx 0.02 5 FeaturePriority.Random 94.94949494949495 27.77777777777778
+mnistconvSmallRELU__PGDK.onnx 0.02 5 FeaturePriority.Gradient 94.94949494949495 56.56565656565656
+mnistconvSmallRELU__PGDK.onnx 0.02 10 FeaturePriority.Gradient 98.98989898989899 57.57575757575758
+mnistconvSmallRELU__PGDK.onnx 0.02 15 FeaturePriority.Gradient 100.0 69.1919191919192
+mnistconvSmallRELU__PGDK.onnx 0.02 15 FeaturePriority.Gradient 100.0 69.1919191919192
+mnistconvSmallRELU__PGDK.onnx 0.02 15 FeaturePriorityNorm.L2 FeaturePriority.Gradient 100.0 69.1919191919192
+mnist_0.1.onnx 0.02 15 FeaturePriorityNorm.L1 FeaturePriority.Gradient 99.47089947089947 79.36507936507937
+mnist_0.1.onnx 0.02 5 FeaturePriorityNorm.L1 FeaturePriority.Gradient 87.3015873015873 28.57142857142857
+mnist_0.1.onnx 0.1 5 FeaturePriorityNorm.L1 FeaturePriority.Gradient 89.74358974358975 29.914529914529915
+mnist_0.1.onnx 0.1 5 FeaturePriorityNorm.Linf FeaturePriority.Weight 90.0 71.66666666666667
+mnist_0.1.onnx 0.1 10 FeaturePriorityNorm.Linf FeaturePriority.Weight 98.33333333333333 95.0
+mnist_0.1.onnx 0.1 15 FeaturePriorityNorm.Linf FeaturePriority.Weight 100.0 98.33333333333333
+mnist_cnn_2layer_width_1_best.pth 0.1 15 FeaturePriorityNorm.Linf FeaturePriority.Weight 89.36170212765957 88.29787234042553
+mnist_cnn_2layer_width_1_best.pth 0.1 10 FeaturePriorityNorm.Linf FeaturePriority.Weight 86.17021276595744 76.59574468085107
+mnist_cnn_2layer_width_1_best.pth 0.1 5 FeaturePriorityNorm.Linf FeaturePriority.Weight 71.27659574468085 62.76595744680851
+mnist_cnn_2layer_width_1_best.pth 0.1 5 FeaturePriorityNorm.Linf FeaturePriority.Weight 71.27659574468085 62.76595744680851
+cifar_cnn_2layer_width_2_best.pth 0.00784313725490196 5 FeaturePriorityNorm.Linf FeaturePriority.Weight 75.0 52.27272727272727
+cifar_cnn_2layer_width_2_best.pth 0.00784313725490196 5 FeaturePriorityNorm.Linf FeaturePriority.Weight 77.27272727272727 50.0
+mnist_0.1.onnx 0.1 5 FeaturePriorityNorm.Linf FeaturePriority.Weight 90.0 36.666666666666664
+mnist_0.1.onnx 0.1 10 FeaturePriorityNorm.Linf FeaturePriority.Weight 98.33333333333333 50.0
+mnist_0.1.onnx 0.1 15 FeaturePriorityNorm.Linf FeaturePriority.Weight 100.0 63.33333333333333
+mnist_standard_modified.pt 0.02 5 FeaturePriorityNorm.L2 FeaturePriority.Random 97.1677559912854 25.49019607843137
+mnistconvSmallRELU__PGDK.onnx 0.02 5 FeaturePriorityNorm.L2 FeaturePriority.Random 95.68788501026694 25.667351129363446
+mnist_0.1.onnx 0.02 5 FeaturePriorityNorm.L2 FeaturePriority.Random 86.04166666666667 26.458333333333332
+mnist_cnn_2layer_width_1_best_modified.pth 0.02 5 FeaturePriorityNorm.L2 FeaturePriority.Random 50.62240663900415 44.398340248962654
+mnistconvSmallRELU__PGDK.onnx 0.1 5 FeaturePriorityNorm.L2 FeaturePriority.Random 100.0 0.0
+mnist_0.1.onnx 0.1 5 FeaturePriorityNorm.L2 FeaturePriority.Random 89.32384341637011 7.473309608540925
+mnist_cnn_2layer_width_1_best_modified.pth 0.1 5 FeaturePriorityNorm.L2 FeaturePriority.Random 49.68287526427061 35.94080338266385
+convSmallRELU__Point.onnx 0.0007843137254901962 5 FeaturePriorityNorm.L2 FeaturePriority.Random 61.01083032490975 16.967509025270758
+convSmall_pgd_cifar.onnx 0.0007843137254901962 5 FeaturePriorityNorm.L2 FeaturePriority.Random 70.46979865771812 20.13422818791946
+cifar10_8_255_colt.onnx 0.0007843137254901962 5 FeaturePriorityNorm.L2 FeaturePriority.Random 66.66666666666666 23.595505617977526
+cifar_cnn_2layer_width_2_best.pth 0.0007843137254901962 5 FeaturePriorityNorm.L2 FeaturePriority.Random 66.41509433962264 46.0377358490566
+convSmall_pgd_cifar.onnx 0.00784313725490196 5 FeaturePriorityNorm.L2 FeaturePriority.Random 79.24528301886792 33.9622641509434
+cifar10_8_255_colt.onnx 0.00784313725490196 5 FeaturePriorityNorm.L2 FeaturePriority.Random 61.53846153846154 51.64835164835166
+cifar_cnn_2layer_width_2_best.pth 0.00784313725490196 5 FeaturePriorityNorm.L2 FeaturePriority.Random 73.33333333333333 64.0

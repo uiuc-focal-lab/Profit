@@ -1,0 +1,7 @@
+sh
+numpy
+scipy
+
+[dev]
+ipython
+ipdb

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+GNN_branching.egg-info/PKG-INFO
+GNN_branching.egg-info/SOURCES.txt
+GNN_branching.egg-info/dependency_links.txt
+GNN_branching.egg-info/requires.txt
+GNN_branching.egg-info/top_level.txt

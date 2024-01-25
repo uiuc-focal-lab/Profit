@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: GNN-branching
+Version: 0.0.1
+Summary: Neural Network Branching for Neural Network Verification
+Home-page: UNKNOWN
+Author: Jingyue Lu
+Author-email: jingyue.lu@spc.ox.ac.uk
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
