@@ -81,10 +81,10 @@ The network, verifier and the input specification can be set by the following ar
   # Property, verifier and Network location.
 
   # network location (onnx format)
-  net_location=config.CIFAR_CONV_SMALL 
+  net_location = config.CIFAR_CONV_SMALL 
   
   # See src/common/__init__.py for details.
-  domain=Domain.DEEPZ 
+  domain = Domain.DEEPZ 
 
   # perturbation bound that defines the input property.
   eps = 1.0/255 
@@ -100,7 +100,6 @@ The network, verifier and the input specification can be set by the following ar
 |Standard | Can not distinguish between the foreground and background pixels. |
 |CROWN-IBP | Conservative - filters out pixels even from the foreground of the image. |
 |COLT | Focuses on the foreground while filtering out background pixels.
-|||
 </center>
 
 ## 📜 Citation
