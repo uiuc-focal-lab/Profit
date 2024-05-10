@@ -8,9 +8,9 @@
 
 <p align="left">
     ℹ️&nbsp;<a href="#-about">About</a>
-    | 📖&nbsp;<a href="#-more-about-syncode">More About ProFIt</a>
+    | 📖&nbsp;<a href="#-more-about-profit">More About ProFIt</a>
     | 🚀&nbsp;<a href="#-quick-start">Quick Start</a>
-    | 👀&nbsp;<a href="#-example-usage">Observations</a>
+    | 👀&nbsp;<a href="#-key-observation">Observations</a>
 </p>
 
 
