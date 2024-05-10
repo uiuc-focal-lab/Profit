@@ -62,13 +62,47 @@ Example CIFAR10 network
 python3 -m unittest -v src.tests.test_sparse_proofs_cifar10_deepz.TestSparsificationCIFAR_02.test_deepz_standard
 ```
 
-### Parameters
+### Reproducing plots
+For reproducing all the plots in the paper use the following command from ``iclr_code/iclr_results``. Note that you should run the proof feature extraction first (see the previous step).
+
+```
+python3 data_processing_cifar.py
+python3 data_processing_mnist.py
+```
 
 ### Run on custom networks
 
+Modify the parameters (shown below) and run the following command.
+```
+python3 -m unittest -v src.tests.test_custom_network.TestCustom.test_custom
+```
+The network, verifier and the input specification can be set by the following arguments. 
+```
+  # Property, verifier and Network location.
 
+  # network location (onnx format)
+  net_location=config.CIFAR_CONV_SMALL 
+  
+  # See src/common/__init__.py for details.
+  domain=Domain.DEEPZ 
 
-## 👀 Observations
+  # perturbation bound that defines the input property.
+  eps = 1.0/255 
+```
+
+## 👀 Key Observation
+<img width="1000" alt="profit_overview" src="./iclr_code/assets/grad_maps.png">
+
+<center>
+
+|Training Method | Proof Feature Characteristics |
+| :---: | :---:|
+|Standard | Can not distinguish between the foreground and background pixels. |
+|CROWN-IBP | Conservative - filters out pixels even from the foreground of the image. |
+|COLT | Focuses on the foreground while filtering out background pixels.
+|||
+</center>
+
 ## 📜 Citation
 <p>
     <a href="https://openreview.net/forum?id=Ev10F9TWML"><img src="https://img.shields.io/badge/Paper-arXiv-blue"></a>
