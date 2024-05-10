@@ -1,4 +1,5 @@
 import torch
+import os
 from src import config
 from copy import deepcopy
 from src.analyzer import Analyzer
@@ -294,7 +295,10 @@ def compute_position(analyzer, pt_args, file):
 
 
 def get_file_name_from_pt_args(pt_args):
-    filename = pt_args.output_dir+"{}_{}_{}.dat".format(pt_args.net_name, pt_args.domain, pt_args.eps)
+    directory = pt_args.output_dir
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    filename = directory+"{}_{}_{}.dat".format(pt_args.net_name, pt_args.domain, pt_args.eps)
     print(filename)
     return filename
 

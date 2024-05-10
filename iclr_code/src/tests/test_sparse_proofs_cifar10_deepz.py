@@ -9,7 +9,7 @@ from src.common import Domain
 from src.proof_transfer.pt_types import ProofTransferMethod, PRUNE, REORDERING
 from src.common.dataset import Dataset
 
-class TestSparsificatioCIFAR_01(TestCase):
+class TestSparsificationCIFAR_01(TestCase):
     def test_deepz_standard(self):
         pruning_args = config.PruningArgs(desried_perturbation=12.0, layers_to_prune=[-1], swap_layers=False, node_wise_bounds=False, 
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
@@ -71,13 +71,13 @@ class TestSparsificatioCIFAR_01(TestCase):
         pt.proof_transfer(args)
 
 
-class TestSparsificatioCIFAR_02(TestCase):
+class TestSparsificationCIFAR_02(TestCase):
     def test_deepz_standard(self):
         pruning_args = config.PruningArgs(desried_perturbation=12.0, layers_to_prune=[-1], swap_layers=False, node_wise_bounds=False, 
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_STANDARD_CONV, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=0.2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -89,7 +89,7 @@ class TestSparsificatioCIFAR_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_CONV_SMALL, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=0.2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -101,7 +101,7 @@ class TestSparsificatioCIFAR_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_CONV_DIFFAI, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=0.2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -113,7 +113,7 @@ class TestSparsificatioCIFAR_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_CONV_COLT, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=0.2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -125,7 +125,7 @@ class TestSparsificatioCIFAR_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_CROWN_IBP, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=0.2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -133,7 +133,7 @@ class TestSparsificatioCIFAR_02(TestCase):
         pt.proof_transfer(args)
 
 
-class TestSparsificatioCIFAR_1(TestCase):
+class TestSparsificationCIFAR_1(TestCase):
     def test_deepz_pgd_trained(self):
         pruning_args = config.PruningArgs(desried_perturbation=12.0, layers_to_prune=[-1], swap_layers=False, node_wise_bounds=False, 
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
@@ -183,13 +183,13 @@ class TestSparsificatioCIFAR_1(TestCase):
         pt.proof_transfer(args)
 
 
-class TestSparsificatioCIFAR_2(TestCase):
+class TestSparsificationCIFAR_2(TestCase):
     def test_deepz_pgd_trained(self):
         pruning_args = config.PruningArgs(desried_perturbation=12.0, layers_to_prune=[-1], swap_layers=False, node_wise_bounds=False, 
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_CONV_SMALL, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -201,7 +201,7 @@ class TestSparsificatioCIFAR_2(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_CONV_DIFFAI, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -213,7 +213,7 @@ class TestSparsificatioCIFAR_2(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_CONV_COLT, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -225,7 +225,7 @@ class TestSparsificatioCIFAR_2(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=2)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/cifar-alpha-crown/'  
+        output_dir='final_results/cifar-alpha-crown/'  
         args = pt.TransferArgs(net=config.CIFAR_CROWN_IBP, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT16), dataset=Dataset.CIFAR10, eps=2/255,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=200, output_dir=output_dir, prop_index=None, ignore_properties=[], 

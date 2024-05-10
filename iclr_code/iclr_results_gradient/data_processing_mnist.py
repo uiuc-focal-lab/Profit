@@ -195,17 +195,3 @@ if __name__ == "__main__":
                 file = open(data_dir_name + filename, 'r+')
                 process_data(file, filename, dir_name=mnist_res_dir_name, dict=mnist_dict)
                 file.close()
-
-    # data_dir_name = './mnist-box/'
-    # mnist_res_dir_name = 'mnist-box-res/'
-    # domains = ['Domain.BOX']
-    # for net_name in mnist_net_names:
-    #     for domain in domains:
-    #         for ep in mnist_eps:
-    #             if net_name in ['mnist-net_256x2.onnx', 'mnistconvSmallRELU__PGDK.onnx']:
-    #                 if ep > 0.02:
-    #                     continue
-    #             filename ='{}_{}_{}.dat'.format(net_name, domain, ep)
-    #             file = open(data_dir_name + filename, 'r+')
-    #             process_data(file, filename, dir_name=mnist_res_dir_name, dict=mnist_dict)
-    #             file.close()

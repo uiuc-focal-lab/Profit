@@ -1,233 +1,1789 @@
-No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
-neurips_results/mnist_standard_modified.pt_Domain.DEEPZ_0.02.dat
-Using Domain.DEEPZ abstract domain
-Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
-Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./data/MNIST/raw/train-images-idx3-ubyte.gz
-Extracting ./data/MNIST/raw/train-images-idx3-ubyte.gz to ./data/MNIST/raw
-
-Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
-Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./data/MNIST/raw/train-labels-idx1-ubyte.gz
-Extracting ./data/MNIST/raw/train-labels-idx1-ubyte.gz to ./data/MNIST/raw
-
-Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
-Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./data/MNIST/raw/t10k-images-idx3-ubyte.gz
-Extracting ./data/MNIST/raw/t10k-images-idx3-ubyte.gz to ./data/MNIST/raw
-
-Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
-Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./data/MNIST/raw/t10k-labels-idx1-ubyte.gz
-Extracting ./data/MNIST/raw/t10k-labels-idx1-ubyte.gz to ./data/MNIST/raw
-
-Labels tensor([7, 2, 1, 0, 4, 1, 4, 9, 5, 9, 0, 6, 9, 0, 1, 5, 9, 7, 3, 4, 9, 6, 6, 5,
-        4, 0, 7, 4, 0, 1])
-************************** Proof 1 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([30.2461, 25.0441, 25.1109, 18.0391, 38.8596, 29.1657, 45.7129,  0.0000,
-        29.0686, 20.2235], grad_fn=<SubBackward0>)
-True label  tensor(7)   adv Label:  tensor(7)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(10.3637, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(1., grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 2 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([28.1754, 21.7729,  0.0000, 34.9381, 40.1718, 42.7179, 24.0047, 39.2970,
-        20.9348, 44.4551], grad_fn=<SubBackward0>)
-True label  tensor(2)   adv Label:  tensor(2)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(14.8355, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(0.5779, grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 3 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([22.9997,  0.0000, 16.9152, 20.7842, 14.7562, 18.5581, 17.4772, 13.6070,
-        12.2383, 23.6082], grad_fn=<SubBackward0>)
-True label  tensor(1)   adv Label:  tensor(1)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(0.4057, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(1., grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 4 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([ 0.0000, 30.6404, 22.7112, 29.2629, 24.7700, 27.0887, 19.3528, 25.9197,
-        33.0493, 22.1698], grad_fn=<SubBackward0>)
-True label  tensor(0)   adv Label:  tensor(0)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(14.4973, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(0.9263, grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 5 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([24.7919, 31.1236, 31.0489, 29.2715,  0.0000, 29.3441, 28.8895, 21.2850,
-        28.3531, 15.5846], grad_fn=<SubBackward0>)
-True label  tensor(4)   adv Label:  tensor(4)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(7.4343, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(0.3008, grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 6 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([27.1354,  0.0000, 25.1958, 28.6893, 16.6230, 28.0989, 27.2814, 13.5733,
-        17.2816, 25.9806], grad_fn=<SubBackward0>)
-True label  tensor(1)   adv Label:  tensor(1)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(4.6779, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(1., grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 7 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([44.9600, 29.9061, 37.5736, 35.3225,  0.0000, 26.3883, 36.3269, 20.8770,
-        16.4263, 12.1564], grad_fn=<SubBackward0>)
-True label  tensor(4)   adv Label:  tensor(4)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(3.6326, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(1., grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 8 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([30.4214, 23.7745, 22.9410, 16.1297, 14.1866, 17.7669, 35.2085, 21.9984,
-        15.7314,  0.0000], grad_fn=<SubBackward0>)
-True label  tensor(9)   adv Label:  tensor(9)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(6.0632, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(1., grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 9 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([18.6905, 33.3142, 28.3975, 23.9310, 19.6984,  0.0000,  5.4023, 26.4944,
-         4.6017,  8.2571], grad_fn=<SubBackward0>)
-True label  tensor(5)   adv Label:  tensor(5)
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(-0.7355, grad_fn=<MinBackward1>)
-global status Status.UNKNOWN
-problem status --  Status.UNKNOWN
-Status.UNKNOWN
-************************** Proof 10 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([37.1235, 43.8236, 42.0479, 31.0002, 16.3841, 31.5285, 44.5756, 17.5348,
-        21.3913,  0.0000], grad_fn=<SubBackward0>)
-True label  tensor(9)   adv Label:  tensor(9)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(8.7847, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(1., grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 11 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([ 0.0000, 40.1978, 24.4532, 34.4278, 40.2616, 34.7864, 28.2253, 33.3632,
-        30.6298, 25.1392], grad_fn=<SubBackward0>)
-True label  tensor(0)   adv Label:  tensor(0)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(19.2705, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(0.5788, grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 12 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([24.4915, 43.3819, 39.7650, 37.1106, 35.1918, 24.4628,  0.0000, 39.8453,
-        24.7157, 37.2899], grad_fn=<SubBackward0>)
-True label  tensor(6)   adv Label:  tensor(6)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(18.1621, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(0.6586, grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 13 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([37.4371, 38.0663, 38.0850, 27.9367, 17.0158, 28.1280, 42.1495, 24.5044,
-        23.7556,  0.0000], grad_fn=<SubBackward0>)
-True label  tensor(9)   adv Label:  tensor(9)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(7.3391, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(1., grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 14 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([ 0.0000, 32.3156, 21.9871, 28.8558, 30.0067, 26.9357, 19.5620, 20.5285,
-        23.0539, 17.9759], grad_fn=<SubBackward0>)
-True label  tensor(0)   adv Label:  tensor(0)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(11.6307, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(0.9251, grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 15 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([37.6033,  0.0000, 25.9322, 21.1210, 18.6191, 21.4486, 24.0535, 23.3725,
-        18.1206, 25.2623], grad_fn=<SubBackward0>)
-True label  tensor(1)   adv Label:  tensor(1)
-Length of current specifications 1
-Depth : 1 Specs size : 1
-Current Lower bound: tensor(8.5310, grad_fn=<MinBackward1>)
-Final layer weight shape torch.Size([10, 100])
-Abs diff tensor(0.5002, grad_fn=<DivBackward0>)
-global status Status.VERIFIED
-Perturbation scale 1.0
-problem status --  Status.VERIFIED
-Status.VERIFIED
-************************** Proof 16 *****************************
-torch.Size([1, 1, 28, 28])
-tensor([38.3075, 34.2425, 35.2123, 15.2979, 35.5495,  0.0000, 26.1775, 26.4389,
-        20.8545, 22.9944], grad_fn=<SubBackward0>)
-True label  tensor(5)   adv Label:  tensor(5)
-Length of current specifications 1
+final_results/cifar-alpha-crown/cifar_cnn_2layer_width_2_best.pth_Domain.LIRPA_CROWN_0.0007843137254901962.dat
+Using Domain.LIRPA_CROWN abstract domain
+Files already downloaded and verified
+Labels tensor([3, 8, 8, 0, 6, 6, 1, 6, 3, 1, 0, 9, 5, 7, 9, 8, 5, 7, 8, 6, 7, 0, 4, 9,
+        5, 2, 4, 0, 9, 6, 6, 5, 4, 5, 9, 2, 4, 1, 9, 5, 4, 6, 5, 6, 0, 9, 3, 9,
+        7, 6, 9, 8, 0, 3, 8, 8, 7, 7, 4, 6, 7, 3, 6, 3, 6, 2, 1, 2, 3, 7, 2, 6,
+        8, 8, 0, 2, 9, 3, 3, 8, 8, 1, 1, 7, 2, 5, 2, 7, 8, 9, 0, 3, 8, 6, 4, 6,
+        6, 0, 0, 7, 4, 5, 6, 3, 1, 1, 3, 6, 8, 7, 4, 0, 6, 2, 1, 3, 0, 4, 2, 7,
+        8, 3, 1, 2, 8, 0, 8, 3, 5, 2, 4, 1, 8, 9, 1, 2, 9, 7, 2, 9, 6, 5, 6, 3,
+        8, 7, 6, 2, 5, 2, 8, 9, 6, 0, 0, 5, 2, 9, 5, 4, 2, 1, 6, 6, 8, 4, 8, 4,
+        5, 0, 9, 9, 9, 8, 9, 9, 3, 7, 5, 0, 0, 5, 2, 2, 3, 8, 6, 3, 4, 0, 5, 8,
+        0, 1, 7, 2, 8, 8, 7, 8, 5, 1, 8, 7, 1, 3, 0, 5, 7, 9, 7, 4, 5, 9, 8, 0,
+        7, 9, 8, 2, 7, 6, 9, 4, 3, 9, 6, 4, 7, 6, 5, 1, 5, 8, 8, 0, 4, 0, 5, 5,
+        1, 1, 8, 9, 0, 3, 1, 9, 2, 2, 5, 3, 9, 9, 4, 0, 3, 0, 0, 9, 8, 1, 5, 7,
+        0, 8, 2, 4, 7, 0, 2, 3, 6, 3, 8, 5, 0, 3, 4, 3, 9, 0, 6, 1, 0, 9, 1, 0,
+        7, 9, 1, 2, 6, 9, 3, 4, 6, 0, 0, 6, 6, 6, 3, 2, 6, 1, 8, 2, 1, 6, 8, 6,
+        8, 0, 4, 0, 7, 7, 5, 5, 3, 5, 2, 3, 4, 1, 7, 5, 4, 6, 1, 9, 3, 6, 6, 9,
+        3, 8, 0, 7, 2, 6, 2, 5, 8, 5, 4, 6, 8, 9, 9, 1, 0, 2, 2, 7, 3, 2, 8, 0,
+        9, 5, 8, 1, 9, 4, 1, 3, 8, 1, 4, 7, 9, 4, 2, 7, 0, 7, 0, 6, 6, 9, 0, 9,
+        2, 8, 7, 2, 2, 5, 1, 2, 6, 2, 9, 6, 2, 3, 0, 3, 9, 8, 7, 8, 8, 4, 0, 1,
+        8, 2, 7, 9, 3, 6, 1, 9, 0, 7, 3, 7, 4, 5, 0, 0, 2, 9, 3, 4, 0, 6, 2, 5,
+        3, 7, 3, 7, 2, 5, 3, 1, 1, 4, 9, 9, 5, 7, 5, 0, 2, 2, 2, 9, 7, 3, 9, 4,
+        3, 5, 4, 6, 5, 6, 1, 4, 3, 4, 4, 3, 7, 8, 3, 7, 8, 0, 5, 7, 6, 0, 5, 4,
+        8, 6, 8, 5, 5, 9, 9, 9, 5, 0, 1, 0, 8, 1, 1, 8, 0, 2, 2, 0])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1712])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5550])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9572])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1609])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7629])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7205])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.3641])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6736])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0808])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4132])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8929])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9380])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2288])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.0753])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0443])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.5330])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7519])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4560])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.8619])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5973])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4214])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.6414])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0726])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.1523])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7963])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3360])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5157])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0716])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8160])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.0462])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1786])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0222])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0308])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3585])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.0354])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-3.3227])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4775])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.2139])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.0122])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1641])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3222])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2127])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0065])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.1043])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9104])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.3697])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5784])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1016])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.2529])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6415])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.4194])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0327])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8378])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2796])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.2645])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.4717])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1827])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8868])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7109])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8121])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.3168])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1225])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1538])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-3.6849])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3842])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5401])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5364])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.8229])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0092])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.6692])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0071])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1580])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2384])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.1993])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3487])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1406])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2327])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0614])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0738])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.6754])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2271])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.7932])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.2937])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.5759])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0500])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-5.0851])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4114])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.4816])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.6248])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8044])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1788])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.1164])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([4.5213])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6404])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7560])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0609])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5590])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1574])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.5415])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.0581])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4417])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0576])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.6965])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7885])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.5882])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8813])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6812])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.6035])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6252])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.6111])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0806])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5634])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3420])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5849])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7788])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0100])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.5399])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6760])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1760])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.3446])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9333])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.7740])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2830])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0194])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3240])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.2744])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0749])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1162])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0077])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0899])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2193])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.9818])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1958])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([5.4062])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.9743])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3902])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.4587])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3139])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3096])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-3.2359])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4562])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7430])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.1226])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.1425])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.0979])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0246])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8369])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.5701])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0944])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.2056])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0684])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3111])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.6293])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4246])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.3606])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1110])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2763])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.7284])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1189])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2017])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3188])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8270])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0222])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5288])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8519])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.5533])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.8916])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1064])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.4161])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2536])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8740])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.1688])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.1874])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.1890])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5625])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9525])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.5801])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1303])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0379])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7062])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6770])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0083])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0630])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1296])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0510])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.1638])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.0074])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0122])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-3.5454])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.2595])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2540])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4010])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.9617])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2252])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2011])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7150])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.9035])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5785])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0067])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3078])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3744])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.0359])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.0881])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0973])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.6817])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0858])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.8469])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0213])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.1576])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.4468])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8514])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8237])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0133])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.4449])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0644])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6591])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.3354])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5504])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.2504])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2295])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.8957])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0041])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7599])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0427])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4811])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.1730])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7031])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7093])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2724])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.5887])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1378])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.7411])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1236])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3038])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.3134])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([5.1049])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1914])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0484])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0101])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0086])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.2329])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4467])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7298])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8448])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.3787])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.2190])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3328])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-3.4989])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.7610])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.3084])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0724])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2855])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.9392])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5969])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0379])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3796])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1198])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.8026])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3235])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4811])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.6610])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1578])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2485])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2201])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.1172])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.2933])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5701])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.3092])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.8222])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.3227])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4096])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0866])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.7486])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0087])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.0717])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0097])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.5243])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8241])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2559])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1174])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9946])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-3.1588])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4240])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.8317])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7152])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([4.8144])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.0585])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.4234])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9391])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2451])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5116])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1797])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.5244])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.5671])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0088])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2029])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0888])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([5.8754])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.5080])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.0271])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4993])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4594])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0802])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8162])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6240])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.5941])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1284])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4782])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.0130])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0904])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1634])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.6666])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2391])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.8497])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7144])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5144])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9867])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2217])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1229])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2216])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1139])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0087])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8695])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.9462])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.4025])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0904])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.2815])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1960])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.2719])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1204])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.7963])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.4512])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2475])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.7358])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9868])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2243])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2144])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7035])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.5442])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3085])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1935])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8688])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.6787])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0610])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.6843])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1048])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.3123])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.4700])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.6264])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2014])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4624])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.3151])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6337])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.4465])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4461])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0981])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.8450])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7062])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.2381])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5540])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1429])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3105])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.9259])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.8678])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.5819])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.1845])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.0739])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-4.1664])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-4.3150])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7420])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0061])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.9539])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8604])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1596])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3947])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2210])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.4178])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6148])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5598])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.1017])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9856])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.6534])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.6356])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.8041])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2960])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.9021])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2035])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7951])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0421])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5146])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.3229])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.8112])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8029])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.4301])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1841])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4987])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5386])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4014])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0771])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-3.9649])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.2876])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-5.6191])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5559])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9907])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.9920])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.1384])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.3249])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2279])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.6281])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2393])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2258])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.9079])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5495])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.7884])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0282])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9465])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9899])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.9954])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8501])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2419])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4929])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3665])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5195])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.4093])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4733])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1136])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2018])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2545])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.1398])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.8353])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2297])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.1370])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5087])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0277])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2029])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.9717])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.3906])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.6286])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0752])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3131])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3304])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5676])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.0850])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0020])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0092])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0083])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5423])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.8389])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9424])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.8056])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.6559])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.3398])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.5166])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0721])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.3687])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7046])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.2735])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2527])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.2402])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-4.4890])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5683])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.7253])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0977])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0043])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.5010])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.2784])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.9950])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1764])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.2907])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.0052])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.2392])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.9009])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.5748])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.4841])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0076])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.2696])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.0789])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.9938])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.7227])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0062])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8674])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.0758])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.7455])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1967])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.0609])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-1.6004])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.5368])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.5405])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3559])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.4523])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.8718])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-0.8417])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.0645])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([1.3397])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([-2.4870])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.0794])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.3074])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([3.6149])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([0.1617])
+Final layer shape torch.Size([10, 256])
+Model input name /input.1
+Method CROWN
+Lower bound tensor([2.3892])
+Final layer shape torch.Size([10, 256])

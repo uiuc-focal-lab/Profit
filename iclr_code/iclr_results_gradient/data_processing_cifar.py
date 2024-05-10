@@ -185,17 +185,3 @@ if __name__ == "__main__":
                 file = open(data_dir_name + filename, 'r+')
                 process_data(file, filename, dir_name=cifar_res_dir_name, dict=cifar_dict)
                 file.close()
-
-    # data_dir_name = './cifar10-box/'
-    # cifar_res_dir_name = 'cifar10-box-res/'
-    # domains = ['Domain.BOX']
-    # for net_name in cifar_net_names:
-    #     for domain in domains:
-    #         for ep in cifar_eps:
-    #             if net_name in ['convSmallRELU__Point.onnx', 'convSmall_pgd_cifar.onnx']:
-    #                 if ep > (0.2 / 255):
-    #                     continue
-    #             filename ='{}_{}_{}.dat'.format(net_name, domain, ep)
-    #             file = open(data_dir_name + filename, 'r+')
-    #             process_data(file, filename, dir_name=cifar_res_dir_name, dict=cifar_dict)
-    #             file.close()

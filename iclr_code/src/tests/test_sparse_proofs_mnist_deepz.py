@@ -15,7 +15,7 @@ class TestMnistSparsification_01(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_STANDARD_MODIFIED, domain=Domain.LIRPA_CROWN_OPT, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.01,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60,output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -27,7 +27,7 @@ class TestMnistSparsification_01(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_FFN_PGD, domain=Domain.LIRPA_CROWN_OPT, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.01,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -39,7 +39,7 @@ class TestMnistSparsification_01(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'        
+        output_dir='final_results/'        
         args = pt.TransferArgs(net=config.MNIST_FFN_DIFFAI, domain=Domain.LIRPA_CROWN_OPT, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.01,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -65,7 +65,7 @@ class TestMnistSparsification_01(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'        
+        output_dir='final_results/'        
         args = pt.TransferArgs(net=config.MNIST_CROWN_IBP_MODIFIED, domain=Domain.LIRPA_CROWN_OPT, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.01,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -81,7 +81,7 @@ class TestMnistSparsification_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_STANDARD_MODIFIED, domain=Domain.DEEPZ, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.02,
                                split=Split.RELU_ESIP_SCORE, count=30, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -93,7 +93,7 @@ class TestMnistSparsification_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'        
+        output_dir='final_results/'        
         args = pt.TransferArgs(net=config.MNIST_CONV_PGD_03, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.02,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -105,7 +105,7 @@ class TestMnistSparsification_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_FFN_DIFFAI, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.02,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -118,7 +118,7 @@ class TestMnistSparsification_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_FFN_01, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.02,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -131,7 +131,7 @@ class TestMnistSparsification_02(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_CROWN_IBP_MODIFIED, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.02,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -144,7 +144,7 @@ class TestMnistSparsification_1(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_STANDARD_MODIFIED, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.1,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60,output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -156,7 +156,7 @@ class TestMnistSparsification_1(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_CONV_PGD_03, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.1,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -168,7 +168,7 @@ class TestMnistSparsification_1(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'        
+        output_dir='final_results/'        
         args = pt.TransferArgs(net=config.MNIST_FFN_DIFFAI, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.1,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -181,7 +181,7 @@ class TestMnistSparsification_1(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'        
+        output_dir='final_results/'        
         args = pt.TransferArgs(net=config.MNIST_FFN_01, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.1,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -194,7 +194,7 @@ class TestMnistSparsification_1(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'        
+        output_dir='final_results/'        
         args = pt.TransferArgs(net=config.MNIST_CROWN_IBP, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.1,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -208,7 +208,7 @@ class TestMnistSparsification_2(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_FFN_PGD, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.2,
                                split=Split.RELU_ESIP_SCORE, count=30, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -220,7 +220,7 @@ class TestMnistSparsification_2(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_FFN_DIFFAI, domain=Domain.LIRPA_CROWN, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.2,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -233,7 +233,7 @@ class TestMnistSparsification_2(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_FFN_03, domain=Domain.LIRPA_CROWN_OPT, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.2,
                                split=Split.RELU_ESIP_SCORE, count=30, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 
@@ -246,7 +246,7 @@ class TestMnistSparsification_2(TestCase):
                 unstructured_pruning=True, structured_pruning=False, maximum_iteration=0, accuracy_drop=0.12)
         enable_sparsification = True
         store_in_file = True
-        output_dir='neurips_results/'
+        output_dir='final_results/'
         args = pt.TransferArgs(net=config.MNIST_CROWN_IBP_MODIFIED, domain=Domain.LIRPA_CROWN_OPT, approx=ap.Quantize(ap.QuantizationType.INT8), dataset=Dataset.MNIST, eps=0.2,
                                split=Split.RELU_ESIP_SCORE, count=500, pt_method=ProofTransferMethod.REUSE, 
                                timeout=60, output_dir=output_dir, prop_index=None, ignore_properties=[], 

@@ -280,30 +280,6 @@ class Analyzer:
 
         return results
 
-    # def analyze_lirpa(self, inputs):
-    #     results = Results(self.args)
-    #     ver_init_time = time.time()
-    #     N = self.args.count
-    #     mean, std = specs.get_mean_std(self.args.dataset)
-    #     inputs = (inputs - mean) / std
-    #     lirpa_model = BoundedModule(self.net, torch.empty_like(inputs), device=inputs.device)
-    #     ptb = PerturbationLpNorm(norm=float("inf"), eps=self.args.eps)
-    #     image = BoundedTensor(inputs, ptb)
-
-    #     # TODO: fix this when the test are added. domain is not a string now
-    #     C = create_out_constr_matrix(N, labels)
-
-    #     olb, _ = lirpa_model.compute_bounds(x=(image,), method=domain.split()[0], C=C)
-    #     count_verified = torch.all(olb >= 0, dim=1).sum().item()
-    #     print(torch.all(olb >= 0, dim=1))
-
-    #     total_time = time.time() - ver_init_time
-    #     count = olb.shape[0]
-    #     for i in range(count):
-    #         results.add_result(Result(total_time / count, olb >= 0))
-    #     return results
-
-
 
     def analyze_lirpa(self, props):
         results = Results(self.args)        
@@ -311,7 +287,6 @@ class Analyzer:
         count = 0 
         for prop in props:
             ver_start_time = time.time()
-            print("Lirpa analysis property", count)
             verification_result = lirpa_analyzer.verify_property(prop, self.args)
             if verification_result == Status.VERIFIED:
                 sparsification_result = lirpa_analyzer.get_sparsification_result()
